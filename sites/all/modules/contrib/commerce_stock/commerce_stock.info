@@ -1,0 +1,18 @@
+name = Commerce Stock
+description = Manage stock levels of Commerce products
+package = Commerce (contrib)
+dependencies[] = number
+dependencies[] = commerce
+dependencies[] = commerce_product
+dependencies[] = commerce_order
+dependencies[] = commerce_line_item
+dependencies[] = commerce_cart
+dependencies[] = rules
+core = 7.x
+configure = admin/commerce/config/stock
+; Information added by drupal.org packaging script on 2013-05-19
+version = "7.x-1.2"
+core = "7.x"
+project = "commerce_stock"
+datestamp = "1368972612"
+
