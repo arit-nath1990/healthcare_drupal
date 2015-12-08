@@ -97,7 +97,7 @@ function startupgrowth_commerce_import_sql($filename){
 	$prefix = $info ['default'] ['prefix']['default'];
 	
 	if ($driver == 'mysql') {
-	$connection = mysql_connect($sqlserver, $user, $password);
+	$connection = mysqli_connect($sqlserver, $user, $password);
 	@mysql_select_db($database, $connection);
 	
 	$buffer='';
@@ -115,7 +115,7 @@ function startupgrowth_commerce_import_sql($filename){
 	  }
 	  fclose($handle);
 	}
-	mysql_close();
+	mysqli_close($connection);
 	cache_clear_all();
 	}
 	return $count;
